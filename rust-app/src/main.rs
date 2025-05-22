@@ -6,6 +6,9 @@ struct Person {
 }
 
 fn main() {    
+
+    let name = std::env::args().nth(1).unwrap_or("World".to_string());
+    println!("Hello, {}!", name);
     // let mut message = String::new();
     // println!("Please enter a message:");
     // stdin().read_line(&mut message).unwrap();
